@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { cuestionario_niif_pymes } from "../consts/cuestionario-niif-pymes";
 import Question from "./Question";
 
 export default function CardQuery() {
+
+    const [isVisibleResponse, setisVisibleResponse] = useState(false);
+
     return (
         <>
             {
@@ -65,6 +69,7 @@ export default function CardQuery() {
                                 )
 
                         }
+
                     </div>
                 ))
             }

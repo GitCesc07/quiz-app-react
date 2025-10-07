@@ -1,25 +1,42 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Option, queryData } from "../../type/typeData";
 
 export default function Question({ question }: { question: queryData }) {
 
     const [getDataQuestion, setGetDataQuestion] = useState<Option[]>([]);
 
-    console.log(getDataQuestion);
 
-    const handleSelectOption = (selectedOption: Option) => {        
-        if (selectedOption.id_response && selectedOption.isChecked == true) {            
-            setGetDataQuestion((prev) => {
-                if (prev.some((item) => item.id_response === selectedOption.id_response)) {
-                    return prev; // Ya está incluida
-                }
-                return [...prev, selectedOption];
-            });
+    // Add this hook to your component
+    useEffect(() => {
+        console.log(getDataQuestion);
+    }, [getDataQuestion]);
+
+    const handleSelectOption = (selectedOption: Option) => {
+        if (getDataQuestion.length == 0) {
+            setGetDataQuestion([...getDataQuestion, selectedOption]);
         }
         else {
-            setGetDataQuestion((prev) => prev.filter((item) => item.id_response !== selectedOption.id_response));
+            if (selectedOption.id_response && selectedOption.isChecked == true) {
+                setGetDataQuestion((prev) => {
+                    if (prev.some((item) => item.id_response === selectedOption.id_response)) {
+                        return prev; // Ya está incluida
+                    }
+                    return [...prev, selectedOption];
+                });
+            }
+            else {
+                setGetDataQuestion((prev) => prev.filter((item) => item.id_response !== selectedOption.id_response));
+            }
         }
     };
+
+    const handleResponseValida = () => {
+        getDataQuestion.map(item => {
+            question.options.map(question => {
+                const response = item.id_response === question.id_response;
+            })
+        })
+    }
 
     return (
         <>
@@ -39,6 +56,14 @@ export default function Question({ question }: { question: queryData }) {
                     </div>
                 ))
             }
+
+            <button
+                onClick={handleResponseValida}
+                type="button"
+                className="bg-cyan-600 hover:bg-cyan-700 transition-all duration-150 text-white font-bold uppercase py-2 px-4 mt-4 rounded-md cursor-pointer"
+            >
+                Enviar respuesta
+            </button>
         </>
     )
 }
