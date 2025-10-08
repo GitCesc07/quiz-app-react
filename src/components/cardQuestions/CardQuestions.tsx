@@ -9,7 +9,7 @@ export default function CardQuestions({ linkActive }: { linkActive: string }) {
                     (
                         <>
                             <Title title={linkActive} />
-                            <CardQuery />
+                            <CardQuery linkActive={linkActive} />
                         </>
                     )
                     :
@@ -17,7 +17,7 @@ export default function CardQuestions({ linkActive }: { linkActive: string }) {
                         (
                             <>
                                 <Title title={linkActive} />
-                                <CardQuery />
+                                <CardQuery linkActive={linkActive} />
                             </>
                         )
                         :
@@ -25,7 +25,7 @@ export default function CardQuestions({ linkActive }: { linkActive: string }) {
                             (
                                 <>
                                     <Title title={linkActive} />
-                                    <CardQuery />
+                                    <CardQuery linkActive={linkActive} />
                                 </>
                             )
                             :

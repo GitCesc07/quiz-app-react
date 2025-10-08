@@ -140,8 +140,6 @@ export const cuestionario_niif_pymes = [
                 ]
             },
             {
-                id: 3,
-                title: "SOBRE EL ESTADO DE SITUACION FINANCIERA",
                 id_question: 6,
                 question: "6.- Para ser una representación perfectamente fiel, una representación tendría tres características.",
                 options: [
@@ -167,8 +165,8 @@ export const cuestionario_niif_pymes = [
                     },
                 ]
             },
-            {         
-                id_question: 7,       
+            {
+                id_question: 7,
                 question: "7.- Una de las afirmaciones siguientes son elementos de los estados financieros de una entidad que informa:",
                 options: [
                     {
@@ -184,7 +182,7 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 7.3,
                         textResponse: "c.- Si la cuantía de la partida o del error juzgado en las circunstancias particulares nos lleva a decir mal.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                     {
                         id_response: 7.4,
@@ -210,12 +208,12 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 8.3,
                         textResponse: "c.- Detalle de reclamaciones en un juicio.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                     {
                         id_response: 8.4,
                         textResponse: "d.- activos, pasivos y patrimonio, que se relacionan con la situación financiera de la entidad queinforma.",
-                        isCorrect: false
+                        isCorrect: true
                     },
                 ]
             },
@@ -392,18 +390,18 @@ export const cuestionario_niif_pymes = [
                     },
                     {
                         id_response: 15.2,
-                        textResponse: "b.- La gerencia tiene la intención de hacer cesar las operaciones de la entidad.",
+                        textResponse: "b.- Puede elegir reclasificar o no los importes comparativos.",
                         isCorrect: false
                     },
                     {
                         id_response: 15.3,
-                        textResponse: "c.- La gerencia no tiene otra alternativa más realista que hacer cesar las operaciones de la entidad",
-                        isCorrect: false
+                        textResponse: "c.- Debe reclasificar los importes comparativos, a menos que sea impracticable hacerlo.",
+                        isCorrect: true
                     },
                     {
                         id_response: 15.4,
                         textResponse: "d.- Todos los casos anteriores.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                 ]
             },
@@ -419,16 +417,16 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 16.2,
                         textResponse: "b.- No se deben presentar de forma separada en los estados financieros (es decir, se deben agrupar en los estados financieros).",
-                        isCorrect: true
+                        isCorrect: false
                     },
                     {
                         id_response: 16.3,
-                        textResponse: "c.- La gerencia no tiene otra alternativa más realista que hacer cesar las operaciones de la entidad",
+                        textResponse: "c.- En ambos casos (A) y (B) arriba.",
                         isCorrect: false
                     },
                     {
                         id_response: 16.4,
-                        textResponse: "d.- Ninguna de las anteriores.",
+                        textResponse: "d.- Se deben presentar de forma separada en los estados financieros si las partidas tienen importancia relativa.",
                         isCorrect: true
                     },
                 ]
@@ -455,7 +453,7 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 17.4,
                         textResponse: "d.- La entidad puede presentar el estado de resultados pero no el estado de cambios en el patrimonio neto.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                 ]
             },
@@ -481,7 +479,7 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 18.4,
                         textResponse: "d.- Los dos periodos comparables anteriores para todos los importes informados.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                 ]
             },
@@ -496,22 +494,22 @@ export const cuestionario_niif_pymes = [
                 question: "19.- De acuerdo con la NIIF para las PYMES, al presentar un estado de situación financiera, una entidad:",
                 options: [
                     {
-                        id_response: 19.1,                        
+                        id_response: 19.1,
                         textResponse: "a.- Debe diferenciar corriente de no corriente en la presentación.",
                         isCorrect: false
                     },
                     {
-                        id_response: 19.2,                        
+                        id_response: 19.2,
                         textResponse: "b.- Debe presentar activos y pasivos en orden de liquidez.",
                         isCorrect: false
                     },
                     {
-                        id_response: 19.3,                        
+                        id_response: 19.3,
                         textResponse: "c.- Debe elegir entre los formatos de presentación por orden de liquidez o corriente/no corriente (es decir, una elección libre del formato de presentación).",
                         isCorrect: false
                     },
                     {
-                        id_response: 19.4,                        
+                        id_response: 19.4,
                         textResponse: "d.- Debe diferenciar corriente de no corriente en la presentación, salvo cuando una presentación basada en el orden de liquidez proporcione información que sea confiable y más relevante.",
                         isCorrect: true
                     },
@@ -686,7 +684,7 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 26.1,
                         textResponse: "a.- Ya sea la naturaleza de los gastos o la función de los gastos dentro de la entidad; cualquiera de las dos opciones que proporcione información confiable y más relevante.",
-                        isCorrect: false
+                        isCorrect: true
                     },
                     {
                         id_response: 26.2,
@@ -701,7 +699,7 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 26.4,
                         textResponse: "d.- Ya sea la naturaleza de los gastos o la función de los gastos dentro de la entidad; cualquiera de las dos opciones que la entidad prefiera presentar.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                 ]
             },
@@ -832,12 +830,12 @@ export const cuestionario_niif_pymes = [
                     {
                         id_response: 31.3,
                         textResponse: "c.- En conjunto para el patrimonio total y por separado para los importes totales atribuibles a lospropietarios de la entidad controladora y a las participaciones no controladoras.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                     {
                         id_response: 31.4,
                         textResponse: "d.- Todas las anteriores.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                 ]
             },
@@ -890,6 +888,486 @@ export const cuestionario_niif_pymes = [
                         id_response: 33.4,
                         textResponse: "d.- Las partidas requeridas por la Sección 5 Estado del Resultado Integral y Estado de Resultados, las ganancias acumuladas al comienzo del periodo sobre el que se informa, los dividendos declarados y pagados o pagaderos en el periodo, las reexpresiones de las ganancias acumuladas por correcciones de errores de un periodo anterior y cambios en las políticas contables, y las ganancias acumuladas al final del periodo sobre el que se informa.",
                         isCorrect: true
+                    },
+                ]
+            },
+            {
+                id_question: 34,
+                question: "34.- ¿La presencia de cuál de las siguientes transacciones en el actual periodo sobre el que se informa impediría que una entidad pueda elegir presentar un estado de resultados y ganancias acumuladas?",
+                options: [
+                    {
+                        id_response: 34.1,
+                        textResponse: "a.- La entidad distribuye terrenos y edificios (clasificados como propiedades de inversión) como un dividendo a su único accionista.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 34.2,
+                        textResponse: "b.- La entidad distribuye terrenos y edificios (clasificados como propiedades, planta y equipo) como un dividendo a su único accionista.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 34.3,
+                        textResponse: "c.- La entidad distribuye terrenos y edificios (clasificados como inventario) como un dividendo a su único accionista.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 34.4,
+                        textResponse: "d.- La entidad adquirió 100 de sus propias acciones de uno de sus dos accionistas.",
+                        isCorrect: true
+                    },
+                ]
+            },
+            {
+                id_question: 35,
+                question: "35.- El resultado integral total del periodo se presenta en un estado de cambios en el patrimonio de forma que:",
+                options: [
+                    {
+                        id_response: 35.1,
+                        textResponse: "a.- Muestre por separado un desglose de los gastos por función o por naturaleza.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 35.2,
+                        textResponse: "b.- Muestre por separado el importe total atribuible a los propietarios de la controladora y a las participaciones no controladoras.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 35.3,
+                        textResponse: "c.- Muestre por separado las partidas requeridas en la Sección 5 Estado del Resultado Integral y Estado de Resultados.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 35.4,
+                        textResponse: "d.- Muestre por separado los resultados y el total de otro resultado integral.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 36,
+                question: "36.- En el estado de cambios en el patrimonio, los efectos de la corrección de un error de un periodo anterior se presentan:",
+                options: [
+                    {
+                        id_response: 36.1,
+                        textResponse: "a.- Por separado para cada componente del patrimonio.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 36.2,
+                        textResponse: "b.- En conjunto para el patrimonio total.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 36.3,
+                        textResponse: "c.- En conjunto para el patrimonio total y por separado para los importes totales atribuibles a los propietarios de la entidad y a las participaciones no controladoras.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 36.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 36,
+                question: "36.- En el estado de cambios en el patrimonio, los efectos de la corrección de un error de un periodo anterior se presentan:",
+                options: [
+                    {
+                        id_response: 36.1,
+                        textResponse: "a.- Por separado para cada componente del patrimonio.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 36.2,
+                        textResponse: "b.- En conjunto para el patrimonio total.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 36.3,
+                        textResponse: "c.- En conjunto para el patrimonio total y por separado para los importes totales atribuibles a los propietarios de la entidad y a las participaciones no controladoras.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 36.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 7,
+        title: "SOBRE EL ESTADO DE FLUJOS DE EFECTIVO",
+        "sobre-el-estado-de-flujo-de-efectivo": [
+            {
+                id_question: 37,
+                question: "37.- El estado de flujos de efectivo presenta los cambios en el efectivo y equivalentes al efectivo:",
+                options: [
+                    {
+                        id_response: 37.1,
+                        textResponse: "a.- Procedentes de las actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 37.2,
+                        textResponse: "b.- Procedentes de las actividades de operación y financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 37.3,
+                        textResponse: "c.- rocedentes de las actividades de operación, inversión y financiación.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 37.4,
+                        textResponse: "d.- En ambos casos (A) y (B) arriba.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 38,
+                question: "38.-  Los cobros en efectivo a clientes por la venta de bienes son flujos de efectivo procedentes de lo siguiente:",
+                options: [
+                    {
+                        id_response: 38.1,
+                        textResponse: "a.- Actividades de inversión.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 38.2,
+                        textResponse: "b.- Actividades de operación o financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 38.3,
+                        textResponse: "c.- Actividades de financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 38.4,
+                        textResponse: "d.- Actividades de operación.",
+                        isCorrect: true
+                    },
+                ]
+            },
+            {
+                id_question: 39,
+                question: "39.- El pago de impuestos indirectos no recuperables por la compra de propiedades, planta y equipo se distribuyen como flujos de efectivo procedentes de:",
+                options: [
+                    {
+                        id_response: 39.1,
+                        textResponse: "a.- Actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 39.2,
+                        textResponse: "b.- Actividades de inversión.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 39.3,
+                        textResponse: "c.- Actividades de operación o financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 39.4,
+                        textResponse: "d.- Actividades de financiación.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 40,
+                question: "40.-  Los pagos en efectivo para adquirir acciones de la entidad (es decir, acciones propias en cartera) son:",
+                options: [
+                    {
+                        id_response: 40.1,
+                        textResponse: "a.- Salidas de efectivo por actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 40.2,
+                        textResponse: "b.- alidas de efectivo por actividades de inversión.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 40.3,
+                        textResponse: "c.- ASalidas de efectivo por actividades de financiación. ",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 40.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 41,
+                question: "41.- Los cobros en efectivo de préstamos tomados a largo plazo son:",
+                options: [
+                    {
+                        id_response: 41.1,
+                        textResponse: "a.- Entradas de efectivo por actividades de inversión.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 41.2,
+                        textResponse: "b.- Entradas de efectivo por actividades de financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 41.3,
+                        textResponse: "c.- Entradas de efectivo por actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 41.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 42,
+                question: "42.- Los intereses y dividendos recibidos:",
+                options: [
+                    {
+                        id_response: 42.1,
+                        textResponse: "a.- Son entradas de efectivo por actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 42.2,
+                        textResponse: "b.- Son entradas de efectivo por actividades de financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 42.3,
+                        textResponse: "c.- Pueden clasificarse como flujos de efectivo por actividades de operación o de financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 42.4,
+                        textResponse: "d.- Pueden clasificarse como flujos de efectivo por actividades de operación o de inversión.",
+                        isCorrect: true
+                    },
+                ]
+            },
+            {
+                id_question: 43,
+                question: "43.- Los cobros en efectivo procedentes de la venta de una planta operada por el propietario son:",
+                options: [
+                    {
+                        id_response: 43.1,
+                        textResponse: "a.- Flujos de efectivo por actividades de financiación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 43.2,
+                        textResponse: "b.- Flujos de efectivo por actividades de inversión.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 43.3,
+                        textResponse: "c.- Flujos de efectivo por actividades de operación.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 43.4,
+                        textResponse: "d.- Todas las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            }
+        ]
+    },
+    {
+        id: 8,
+        title: "SOBRE NOTAS A LOS ESTADOS FINANCIEROS",
+        "sobre-notas-a-los-estados-financieros": [
+            {
+                id_question: 44,
+                question: "44.- Las notas a los estados financieros:",
+                options: [
+                    {
+                        id_response: 44.1,
+                        textResponse: "a.- Contienen únicamente la información que la NIIF para las PYMES exige divulgar y que no haya sido presentada en el estado de situación financiera, en el estado del resultado integral, en el estado de cambios en el patrimonio neto o en el estado de flujos de efectivo.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 44.2,
+                        textResponse: "b.- Contienen información requerida por la Sección 8 Notas a los Estados Financieros sin referencia a otras secciones de la NIIF para las PYMES.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 44.3,
+                        textResponse: "c.- Contienen la información que la NIIF para las PYMES exige divulgar y que no haya sido presentada en el estado de situación financiera, en el estado del resultado integral, en el estado de cambios en el patrimonio neto o en el estado de flujos de efectivo e información adicional que sea relevante para la comprensión de los estados financieros.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 44.4,
+                        textResponse: "d.- Ninguna de las anterires.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 45,
+                question: "45.- La referencia entre cada partida en los estados financieros y toda información relacionada que se divulgue en las notas a los estados financieros:",
+                options: [
+                    {
+                        id_response: 45.1,
+                        textResponse: "a.- Es de carácter voluntario.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 45.2,
+                        textResponse: "b.- Es de carácter obligatorio.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 45.3,
+                        textResponse: "c.- Depende del secto.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 45.4,
+                        textResponse: "d.- En ambos casos (A) y (B).",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 46,
+                question: "46.- La presentación de las notas a los estados financieros de forma sistemática:",
+                options: [
+                    {
+                        id_response: 46.1,
+                        textResponse: "a.- Es de carácter voluntario.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 46.2,
+                        textResponse: "b.- Es de carácter obligatorio.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 46.3,
+                        textResponse: "c.- Es de carácter obligatorio, en la medida en que sea practicable.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 46.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 47,
+                question: "47.- Una entidad presentará normalmente las notas en el siguiente orden:",
+                options: [
+                    {
+                        id_response: 47.1,
+                        textResponse: "a.- Primero, una declaración de que los estados financieros se han elaborado cumpliendo con la NIIF para las PYMES. Segundo, un resumen de las políticas contables significativas aplicadas. Tercero, información de apoyo para las partidas presentadas en los estados financieros en elmismo orden en que se presente cada estado y cada partida. Por último, cualquier otra información a revelar.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 47.2,
+                        textResponse: "b.- Primero, información de apoyo para las partidas presentadas en los estados financieros en el mismo orden en que se presente cada estado y cada partida.  Segundo, una declaración de que los estados financieros se han elaborado cumpliendo con la NIIF para las PYMES. Tercero, un resumen de las políticas contables significativas aplicadas. Por último, cualquier otra información a revelar.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 47.3,
+                        textResponse: "c.- Primero, información de apoyo para las partidas presentadas en los estados financieros en el mismo orden en que se presente cada estado y cada partida.  Segundo, un resumen de las políticas contables significativas aplicadas. Tercero, una declaración de que los estados financieros se han elaborado cumpliendo con la NIIF para las PYMES.  Por último, cualquier otra información a revelar.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 47.4,
+                        textResponse: "d.- Ninguna de las anteriores.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 48,
+                question: "48.- Una entidad revelará, en el resumen de políticas contables significativas:",
+                options: [
+                    {
+                        id_response: 48.1,
+                        textResponse: "a.- La base (o bases) de medición utilizada(s) para la elaboración de los estados financieros.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 48.2,
+                        textResponse: "b.- Todas las bases de medición especificadas en la NIIF para las PYMES, independientementede si fueron usadas por la entidad al preparar sus estados financieros.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 48.3,
+                        textResponse: "c.- La base (o bases) de medición utilizada(s) al elaborar los estados financieros y las políticas contables empleadas que sean relevantes para la comprensión de ellos.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 48.4,
+                        textResponse: "d.- Todas las bases de medición y las elecciones de políticas contables a disposición de la entidad (es decir, especificadas en la NIIF para las PYMES), independientemente de si fueron usadas por la entidad al elaborar sus estados financieros.",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 49,
+                question: "49.- Revelar información sobre las fuentes clave de incertidumbre en la estimación:",
+                options: [
+                    {
+                        id_response: 49.1,
+                        textResponse: "a.- Es de carácter voluntario.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 49.2,
+                        textResponse: "b.- Es de carácter obligatorio.",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 49.3,
+                        textResponse: "c.- En ambos casos (A) y (B) arriba.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 49.4,
+                        textResponse: "d.- Ninguna de las anteriores",
+                        isCorrect: false
+                    },
+                ]
+            },
+            {
+                id_question: 50,
+                question: "50.- Revelar información sobre los juicios, excepto sobre aquellos que conlleven estimaciones, efectuados por la gerencia en el proceso de aplicación de las políticas contables de la entidad y que tengan el mayor efecto significativo sobre los importes reconocidos en los estados financieros:",
+                options: [
+                    {
+                        id_response: 50.1,
+                        textResponse: "a.- Es de carácter obligatorio. ",
+                        isCorrect: true
+                    },
+                    {
+                        id_response: 50.2,
+                        textResponse: "b.- Es de carácter voluntario.",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 50.3,
+                        textResponse: "c.- Ninguna de las anteriores",
+                        isCorrect: false
+                    },
+                    {
+                        id_response: 50.4,
+                        textResponse: "d.- En ambos casos (A) y (B) arriba.",
+                        isCorrect: false
                     },
                 ]
             }
