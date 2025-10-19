@@ -19,7 +19,7 @@ export default function QuizResults({ linkActive }: QuizResultProps) {
 
     // Obtener todas las preguntas del cuestionario
     const getAllQuestions = () => {
-        const allQuestions: unknown[] = [];        
+        const allQuestions: unknown[] = [];
         if (linkActive == "NIIF Pymes") {
             cuestionario_niif_pymes.forEach(section => {
                 Object.keys(section).forEach(key => {
@@ -38,11 +38,38 @@ export default function QuizResults({ linkActive }: QuizResultProps) {
                 });
             });
         }
+        if (linkActive == "Etica Profesional") {
+            cuestionario_derecho_tributario.forEach(section => {
+                Object.keys(section).forEach(key => {
+                    if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
+                        allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
+                    }
+                });
+            });
+        }
+        if (linkActive == "PLA") {
+            cuestionario_derecho_tributario.forEach(section => {
+                Object.keys(section).forEach(key => {
+                    if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
+                        allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
+                    }
+                });
+            });
+        }
+        if (linkActive == "Normas Internacionales") {
+            cuestionario_derecho_tributario.forEach(section => {
+                Object.keys(section).forEach(key => {
+                    if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
+                        allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
+                    }
+                });
+            });
+        }
 
         return allQuestions;
-    };    
+    };
 
-    const allQuestions = getAllQuestions();    
+    const allQuestions = getAllQuestions();
     const totalQuestions = allQuestions!.length;
     const answeredQuestions = answers.length;
     const allQuestionsAnswered = answeredQuestions === totalQuestions;

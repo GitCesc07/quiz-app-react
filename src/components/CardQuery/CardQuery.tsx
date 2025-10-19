@@ -1,8 +1,11 @@
 import { cuestionario_niif_pymes } from "../consts/cuestionario-niif-pymes";
 import { cuestionario_derecho_tributario } from "../consts/cuestionario-derecho-tributario";
+import { cuestionario_pla } from "../consts/cuestionario-pla";
 import Question from "./Question";
 import QuizResults from "../QuizResults/QuizResults";
 import { useEffect, useState } from "react";
+import { cuestionario_sobre_etica_profesional } from "../consts/cuestionaro-sobre-etica-profesional";
+import { cuestionario_normas_internacionales } from "../consts/cuestionario-normas-internacionales";
 
 type CardQueryProps = {
     linkActive: string
@@ -12,7 +15,7 @@ export default function CardQuery({ linkActive }: CardQueryProps) {
 
     const [isChangeQuery, setIsChangeQuery] = useState(false);
 
-    useEffect(() => {        
+    useEffect(() => {
         setIsChangeQuery(true);
     }, [linkActive]);
 
@@ -22,7 +25,7 @@ export default function CardQuery({ linkActive }: CardQueryProps) {
             {
                 linkActive == "NIIF Pymes" ?
                     cuestionario_niif_pymes.map((questions, index) => (
-                        <div key={index} className="w-full bg-white p-4 rounded-lg shadow-lg shadow-gray-300 flex flex-col items-center justify-center mt-4">
+                        <div key={index} className="w-full bg-white rounded-lg shadow-lg shadow-gray-300 flex flex-col items-center justify-center mt-4">
                             <h3 className="text-xl font-bold text-center mb-6">{questions.title}</h3>
                             {
                                 questions.id === 1 ? (
@@ -141,11 +144,63 @@ export default function CardQuery({ linkActive }: CardQueryProps) {
                         ))
                         :
                         linkActive == "Etica Profesional" ?
-                            (
-                                <p>Etica profesional</p>
-                            )
+                            cuestionario_sobre_etica_profesional.map((questions, index) => (
+                                <div key={index} className="w-full bg-white rounded-lg shadow-lg shadow-gray-300 flex flex-col items-center justify-center mt-4">
+                                    <h3 className="text-xl font-bold text-center mb-6">{questions.title}</h3>
+                                    {
+                                        questions.id === 1 ? (
+                                            questions["cuestionario-de-seleccion-multiple-sobre-etica-profesional"]?.map((question, questionIndex) => (
+                                                <div className="w-full border-b border-gray-200 pb-4" key={questionIndex}>
+                                                    <Question question={question} isChangeQuery={isChangeQuery} />
+                                                </div>
+                                            ))
+                                        )
+                                            :
+                                            (null)
+                                    }
+
+                                </div>
+                            ))
                             :
-                            (null)
+                            linkActive == "PLA" ?
+                                cuestionario_pla.map((questions, index) => (
+                                    <div key={index} className="w-full bg-white rounded-lg shadow-lg shadow-gray-300 flex flex-col items-center justify-center mt-4">
+                                        <h3 className="text-xl font-bold text-center mb-6">{questions.title}</h3>
+                                        {
+                                            questions.id === 1 ? (
+                                                questions["cuestionario_pla"]?.map((question, questionIndex) => (
+                                                    <div className="w-full border-b border-gray-200 pb-4" key={questionIndex}>
+                                                        <Question question={question} isChangeQuery={isChangeQuery} />
+                                                    </div>
+                                                ))
+                                            )
+                                                :
+                                                (null)
+                                        }
+
+                                    </div>
+                                ))
+                                :
+                                linkActive == "Normas Internacionales" ?
+                                    cuestionario_normas_internacionales.map((questions, index) => (
+                                        <div key={index} className="w-full bg-white rounded-lg shadow-lg shadow-gray-300 flex flex-col items-center justify-center mt-4">
+                                            <h3 className="text-xl font-bold text-center mb-6">{questions.title}</h3>
+                                            {
+                                                questions.id === 1 ? (
+                                                    questions["cuestionario-de-normas-internacionales-de-auditoria-y-responsabilidades-del-auditor"]?.map((question, questionIndex) => (
+                                                        <div className="w-full border-b border-gray-200 pb-4" key={questionIndex}>
+                                                            <Question question={question} isChangeQuery={isChangeQuery} />
+                                                        </div>
+                                                    ))
+                                                )
+                                                    :
+                                                    (null)
+                                            }
+
+                                        </div>
+                                    ))
+                                    :
+                                    (null)
             }
 
             {/* Componente de resultados */}
