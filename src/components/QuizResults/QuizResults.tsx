@@ -1,6 +1,9 @@
 import { useQuiz } from "../../hooks/useQuiz";
 import { cuestionario_niif_pymes } from "../consts/cuestionario-niif-pymes";
 import { cuestionario_derecho_tributario } from "../consts/cuestionario-derecho-tributario";
+import { cuestionario_sobre_etica_profesional } from "../consts/cuestionaro-sobre-etica-profesional";
+import { cuestionario_pla } from "../consts/cuestionario-pla";
+import { cuestionario_normas_internacionales } from "../consts/cuestionario-normas-internacionales";
 
 
 type QuizResultProps = {
@@ -39,7 +42,7 @@ export default function QuizResults({ linkActive }: QuizResultProps) {
             });
         }
         if (linkActive == "Etica Profesional") {
-            cuestionario_derecho_tributario.forEach(section => {
+            cuestionario_sobre_etica_profesional.forEach(section => {
                 Object.keys(section).forEach(key => {
                     if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
                         allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
@@ -48,7 +51,7 @@ export default function QuizResults({ linkActive }: QuizResultProps) {
             });
         }
         if (linkActive == "PLA") {
-            cuestionario_derecho_tributario.forEach(section => {
+            cuestionario_pla.forEach(section => {
                 Object.keys(section).forEach(key => {
                     if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
                         allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
@@ -57,7 +60,7 @@ export default function QuizResults({ linkActive }: QuizResultProps) {
             });
         }
         if (linkActive == "Normas Internacionales") {
-            cuestionario_derecho_tributario.forEach(section => {
+            cuestionario_normas_internacionales.forEach(section => {
                 Object.keys(section).forEach(key => {
                     if (key !== 'id' && key !== 'title' && Array.isArray((section as Record<string, unknown>)[key])) {
                         allQuestions.push(...((section as Record<string, unknown>)[key] as unknown[]));
