@@ -968,33 +968,7 @@ export const cuestionario_niif_pymes = [
                         isCorrect: false
                     },
                 ]
-            },
-            {
-                id_question: 36,
-                question: "36.- En el estado de cambios en el patrimonio, los efectos de la corrección de un error de un periodo anterior se presentan:",
-                options: [
-                    {
-                        id_response: 36.1,
-                        textResponse: "a.- Por separado para cada componente del patrimonio.",
-                        isCorrect: true
-                    },
-                    {
-                        id_response: 36.2,
-                        textResponse: "b.- En conjunto para el patrimonio total.",
-                        isCorrect: false
-                    },
-                    {
-                        id_response: 36.3,
-                        textResponse: "c.- En conjunto para el patrimonio total y por separado para los importes totales atribuibles a los propietarios de la entidad y a las participaciones no controladoras.",
-                        isCorrect: false
-                    },
-                    {
-                        id_response: 36.4,
-                        textResponse: "d.- Ninguna de las anteriores.",
-                        isCorrect: false
-                    },
-                ]
-            }
+            }            
         ]
     },
     {

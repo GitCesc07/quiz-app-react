@@ -14,7 +14,7 @@ export const cuestionario_derecho_tributario = [
                     },
                     {
                         id_response: 1.2,
-                        textResponse: "b.- No es alcance de esta materia.",
+                        textResponse: "b.- Está contenida en el deber de sometimiento al Derecho.",
                         isCorrect: true
                     },
                     {
@@ -421,8 +421,8 @@ export const cuestionario_derecho_tributario = [
                     },
                     {
                         id_response: 16.3,
-                        textResponse: "c.- Ninga de las dos.",
-                        isCorrect: true
+                        textResponse: "c.- Ninguna de las dos.",
+                        isCorrect: false
                     },
                     {
                         id_response: 16.4,
@@ -448,7 +448,7 @@ export const cuestionario_derecho_tributario = [
                     {
                         id_response: 17.3,
                         textResponse: "c.- Si, estamos violentando lo dispuesto en la ley.",
-                        isCorrect: true
+                        isCorrect: false
                     },
                     {
                         id_response: 17.4,
